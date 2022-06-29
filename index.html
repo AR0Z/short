@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x40"
+            href="assets/img/favicon.png"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Overpass:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="assets/js/jdrs1.0.min.js"></script>
+        <script src="assets/js/qrcode.min.js"></script>
+        <title>Short Link ! Reduce your links easily</title>
+        <meta
+            name="description"
+            content="Reduce your link easily, by having a course link or with a QRCode"
+        />
+
+        <meta property="og:local" conten="en_EN" />
+        <meta
+            property="og:site_name"
+            conten="Short Link ! Reduce your links easily"
+        />
+        <meta
+            property="og:title"
+            conten="Short Link ! Reduce your links easily"
+        />
+        <meta property="og:url" conten="https://short.aroz.be/" />
+        <meta
+            property="og:description"
+            conten="Reduce your link easily, by having a course link or with a QRCode"
+        />
+        <meta
+            property="og:image"
+            content="https://short.aroz.be/assets/img/short.png"
+        />
+        <meta property="og:image:width" content="886" />
+        <meta property="og:image:height" content="538" />
+        <meta property="og:image:type" content="image/png" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="title">
+                <h1 class="text_shadow">Short</h1>
+                <h2 class="text_shadow">
+                    Reduce your links easily! For the moment
+                    <span id="countLink"></span> link has been reduced with
+                    Short!
+                </h2>
+            </section>
+
+            <main class="link">
+                <div class="link_input">
+                    <label for="link" class="box_shadow">Your Link</label>
+                    <input type="text" class="box_shadow" id="link" />
+                    <button type="button" class="box_shadow" id="short">
+                        Short !
+                    </button>
+                </div>
+
+                <div class="link_shorted">
+                    <label for="shorted_link text_shadow">Shorted Link</label>
+                    <input type="text box_shadow" id="shorted_link" value="" />
+
+                    <div class="link_shorted--options">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            fill="none"
+                            viewBox="0 0 21 21"
+                            id="copyLink"
+                        >
+                            <path
+                                fill="#9DD2B4"
+                                d="M20.614 2.897 18.102.385A1.309 1.309 0 0 0 17.173 0h-6.71a2.625 2.625 0 0 0-2.625 2.625l.001 10.5c.036 1.452 1.213 2.625 2.661 2.625h7.875A2.633 2.633 0 0 0 21 13.125v-9.3c0-.348-.14-.682-.386-.928Zm-1.583 10.228a.656.656 0 0 1-.656.656h-7.912a.656.656 0 0 1-.656-.656V2.63c0-.362.294-.656.656-.656h5.25l.037 1.964c0 .724.588 1.312 1.313 1.312h1.931v7.875h.037Zm-7.875 5.25a.656.656 0 0 1-.656.656H2.588a.656.656 0 0 1-.656-.656l.036-10.496c0-.362.294-.656.657-.656h3.938V5.25H2.625A2.625 2.625 0 0 0 0 7.875v10.5A2.626 2.626 0 0 0 2.625 21H10.5a2.633 2.633 0 0 0 2.625-2.625v-1.313h-1.932l-.037 1.313Z"
+                            />
+                        </svg>
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="19"
+                            height="20"
+                            fill="none"
+                            viewBox="0 0 19 20"
+                            id="createQRCode"
+                        >
+                            <path
+                                fill="#9DD2B4"
+                                d="M6.107 0c1.124 0 2.036.923 2.036 2.063v4.124c0 1.14-.912 2.063-2.036 2.063H2.036C.91 8.25 0 7.326 0 6.187V2.063C0 .923.911 0 2.036 0h4.071ZM5.43 2.75H2.714V5.5H5.43V2.75ZM6.107 11c1.124 0 2.036.924 2.036 2.063v4.124c0 1.14-.912 2.063-2.036 2.063H2.036C.91 19.25 0 18.326 0 17.187v-4.125C0 11.925.911 11 2.036 11h4.071Zm-.678 2.75H2.714v2.75H5.43v-2.75Zm5.428-11.688C10.857.923 11.77 0 12.893 0h4.071C18.088 0 19 .923 19 2.063v4.124c0 1.14-.912 2.063-2.036 2.063h-4.071c-1.124 0-2.036-.924-2.036-2.063V2.063ZM13.571 5.5h2.715V2.75H13.57V5.5Zm1.358 12.375h1.357v1.375h-1.357v-1.375ZM19 19.25h-1.357v-1.375H19v1.375ZM17.643 11H19v5.5h-4.071v-1.375H13.57v4.125h-2.714V11h4.072v1.375h2.714V11Z"
+                            />
+                        </svg>
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="19"
+                            height="19"
+                            fill="none"
+                            viewBox="0 0 19 19"
+                            id="clearLink"
+                        >
+                            <path
+                                fill="#F7B6BE"
+                                d="M18.44 15.758a1.899 1.899 0 1 1-2.684 2.685L9.499 12.19l-6.256 6.252A1.883 1.883 0 0 1 1.9 19c-.486 0-.972-.184-1.343-.558a1.9 1.9 0 0 1 0-2.687l6.257-6.257L.557 3.243A1.9 1.9 0 1 1 3.243.557L9.5 6.817 15.757.56a1.9 1.9 0 1 1 2.686 2.686l-6.257 6.258 6.254 6.254Z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div id="QRCode" class="QRCode"></div>
+            </main>
+        </div>
+
+        <footer>
+            <p>
+                Powered by <a href="https://www.aroz.be/">aroz.be</a> &
+                <a href="https://www.calvin-nogueira.fr/">calvin-nogueira.fr</a>
+            </p>
+            <p>aroz.be ©</p>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
