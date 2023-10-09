@@ -1,0 +1,23 @@
+{
+  "name": "short-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "initDB": "node scripts/JS/initDB.js",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "AR0Z",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-promise-router": "^4.1.1",
+    "express-rate-limit": "^7.1.0",
+    "pg": "^8.11.3",
+    "url-parse": "^1.5.10"
+  }
+}
